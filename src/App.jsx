@@ -18,7 +18,7 @@ function App() {
       }}>
         <li>Anime Streaming  - <a href="http://anime.fermontallana.studio">http://anime.fermontallana.studio</a></li>
         <li>Quote Generator - <a href="http://quote.fermontallana.studio">http://quote.fermontallana.studio</a></li>
-        <li>FrostCity HVAC - <a href="http://frostcity-capstone.vercel.app">http://frostcity-capstone.vercel.app</a></li>
+        {/* <li>FrostCity HVAC - <a href="http://frostcity-capstone.vercel.app">http://frostcity-capstone.vercel.app</a></li> */}
       </ul>
     </div>
   )
