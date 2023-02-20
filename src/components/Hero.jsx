@@ -45,7 +45,7 @@ export default function Hero() {
                 </div>
             </div>
 
-            <div className=" flex flex-col lg:flex-row justify-start  flex-shrink-0  h-full lg:h-screen w-full lg:w-3/6 ">
+            <div className="relative flex flex-col lg:flex-row justify-start  flex-shrink-0  h-full lg:h-screen w-full lg:w-3/6 ">
                 {/* scroll up */}
                 {/* <div className=" absolute  bg-transparent h-full w-full z-10"> */}
                 <div className="z-10 hidden lg:block absolute top-0 left-0 bg-gradient-to-b from-slate-200 to-transparent h-24 w-full"></div>
