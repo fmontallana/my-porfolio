@@ -18,19 +18,24 @@ export default function Hero() {
                             <Char text={char} color="hover:text-sky-600" />
                         </p>)}
                     </div>
-                    <p className={'text-4xl lg:text-6xl font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-sky-600 to-sky-400 '}>
-                        <Char text={"Fernando"} color="hover:text-sky-600" />
-                    </p>
-                    <p className={'text-4xl lg:text-6xl font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-sky-600 to-sky-400 '}>
+                    <div className="text-2xl lg:text-5xl w-full flex justify-start gap-5 lg:gap-0 lg:justify-between ">
+                        {"Fernando Montallana".split(" ").map((char, index) => <p key={index} className={'font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-sky-600 to-sky-400'}>
+                            <Char text={char} color="hover:text-sky-600" />
+                        </p>)}
+                    </div>
+                    {/* <p className={'text-2xl lg:text-6xl font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-sky-600 to-sky-400 '}>
+                        <Char text={"Fernando Montallana"} color="hover:text-sky-600" />
+                    </p> */}
+                    {/* <p className={'text-4xl lg:text-6xl font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-sky-600 to-sky-400 '}>
                         <Char text={"Montallana"} color="hover:text-sky-600" />
-                    </p>
+                    </p> */}
 
-                    <div className=" w-full flex justify-start gap-5">
+                    <div className=" w-full flex justify-start lg:justify-between gap-5">
                         {"a front-end developer".split(" ").map((char, index) => <span key={index} className="font-bold stretch-125">
                             <Char text={char} color="hover:text-cyan-600" />
                         </span>)}
                     </div>
-                    <div className=" w-full flex justify-start gap-5">
+                    <div className=" w-full flex justify-start lg:justify-between gap-5">
                         {"who loves ReactJS.".split(" ").map((char, index) => <span key={index} className={`font-bold stretch-125 ${char.toLowerCase() === "reactjs." && "font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-cyan-600 to-cyan-400"}`}>
                             <Char text={char} color={char === "loves" ? "hover:text-red-600" : "hover:text-cyan-600"} />
                         </span>)}
