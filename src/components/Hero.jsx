@@ -10,11 +10,12 @@ export default function Hero() {
     const Char = ({ text, color }) => text.split("").map((char) => <p className={`hover:animate-bounce ${color} inline-block cursor-none`}>{char}</p>)
     return (
         <section className=" w-full h-full flex flex-col lg:flex-row overflow-y-hidden">
-            <div className=" px-4 py-2 lg:py-10 lg:px-10 text-gray-900 flex flex-col gap-6 justify-start items-start flex-shrink-0  h-5/6 lg:h-full w-full lg:w-3/6 " >
-                <p className="font-black stretch-125 text-gray-800 text-3xl z-20 ">fm.</p>
+            <div className=" px-4 py-2 lg:py-10 lg:px-10 text-slate-800 flex flex-col gap-6 justify-start items-start flex-shrink-0  h-5/6 lg:h-full w-full lg:w-3/6 " >
+
+                <a href='/' className="font-black stretch-125 text-gray-900 text-3xl z-20 hover:underline ">fm.</a>
                 <div className="py-16 text-2xl lg:text-5xl w-full flex flex-col select-none">
                     <div className=" w-full flex justify-start gap-5">
-                        {"Hi! I am".split(" ").map((char, index) => <p key={index} className={'font-bold stretch-125'}>
+                        {"Hi! I am".split(" ").map((char, index) => <p key={index} className={'font-black lg:font-bold stretch-125'}>
                             <Char text={char} color="hover:text-sky-600" />
                         </p>)}
                     </div>
@@ -31,12 +32,12 @@ export default function Hero() {
                     </p> */}
 
                     <div className=" w-full flex justify-start lg:justify-between gap-5">
-                        {"a front-end developer".split(" ").map((char, index) => <span key={index} className="font-bold stretch-125">
+                        {"a front-end developer".split(" ").map((char, index) => <span key={index} className="font-black lg:font-bold stretch-125">
                             <Char text={char} color="hover:text-cyan-600" />
                         </span>)}
                     </div>
                     <div className=" w-full flex justify-start lg:justify-between gap-5">
-                        {"who loves ReactJS.".split(" ").map((char, index) => <span key={index} className={`font-bold stretch-125 ${char.toLowerCase() === "reactjs." && "font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-cyan-600 to-cyan-400"}`}>
+                        {"who loves ReactJS.".split(" ").map((char, index) => <span key={index} className={`font-black lg:font-bold stretch-125 ${char.toLowerCase() === "reactjs." && "font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-cyan-600 to-cyan-400"}`}>
                             <Char text={char} color={char === "loves" ? "hover:text-red-600" : "hover:text-cyan-600"} />
                         </span>)}
                     </div>
