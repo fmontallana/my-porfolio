@@ -9,18 +9,18 @@ module.exports = {
       keyframes: {
         scrollUp: {
           '0%': { transform: 'translateY(0)' },
-          '100%': { transform: 'translateY(calc(-384px * 4))' },
+          '100%': { transform: 'translateY(calc(-300px * 3))' },
         },
         scrollDown: {
-          '0%': { transform: 'translateY(calc(-384px * 4))' },
+          '0%': { transform: 'translateY(calc(-300px * 3))' },
           '100%': { transform: 'translateY(0)' },
         },
         scrollLeft: {
           '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(calc(-310px * 4))' },
+          '100%': { transform: 'translateX(calc(-315px * 3))' },
         },
         scrollRight: {
-          '0%': { transform: 'translateX(calc(310px * 4))' },
+          '0%': { transform: 'translateX(calc(-310px * 4))' },
           '100%': { transform: 'translateX(0)' },
         },
       },

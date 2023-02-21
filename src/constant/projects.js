@@ -15,7 +15,7 @@ export const PROJECTS = [
 
     {
         title: "Quote Generator",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illum repellat cum illo at veniam maiores, nihil tenetur qui amet.",
+        description: "A project that generates random quotes from an API. It also allows you to tweet the quote. Created from a coding challenge from CodingSpaces.",
         tools: ["HTML", "CSS", "JavaScript", "API"],
         images: [quote1, quote2, quote3],
         demo: "https://quote.fermontallana.studio/",
@@ -23,15 +23,15 @@ export const PROJECTS = [
     },
     {
         title: "aflix | anime streaming site",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illum repellat cum illo at veniam maiores, nihil tenetur qui amet.",
-        tools: ["ReactJS", "API", "Zustand"],
+        description: "A streaming site for anime build with modern UI. It uses the Consumet API to fetch anime data and cover photos.",
+        tools: ["NextJS", "Tailwind", "API", "Zustand"],
         images: [aflix1, aflix2, aflix3, aflix4],
         demo: "https://anime.fermontallana.studio/",
         github: "https://github.com/fmontallana/aniwatch"
     },
     {
         title: "FrostCity | HVAC Services",
-        description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus illum repellat cum illo at veniam maiores, nihil tenetur qui amet.",
+        description: "A website with reservation system for a local HVAC company. It has a landing page, services page, contact page, and about page.",
         tools: ["ReactJS", "TailwindCSS", "Context API", "Firebase"],
         images: [fc1, fc2, fc3, fc4, fc5],
         demo: "https://fcdemo.fermontallana.studio/",

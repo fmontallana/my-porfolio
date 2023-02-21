@@ -16,10 +16,10 @@ export default function Hero() {
         const text = color === "-sky-400" ? "text-sky-400" : color === "-emerald-400" ? "text-emerald-400" : color === "-rose-400" ? "text-rose-400" : "text-lime-400"
 
         return (
-            <button className={`bg-slate-100 py-1 flex-shrink-0 gap-1 flex flex-col justify-center items-center text-xs  lg:text-sm text-gray-500 font-semibold  w-20 lg:h-20 lg:w-28  rounded-lg shadow border-2 border-slate-300  ${hover} ring-offset-2 ring-offset-slate-200 transition-all ease-in-out duration-300 `}>
+            <a href={`/#${title.toLowerCase()}`} className={`bg-slate-100 py-1 flex-shrink-0 gap-1 flex flex-col justify-center items-center text-xs  lg:text-sm text-gray-500 font-semibold  w-20 lg:h-20 lg:w-28  rounded-lg shadow border-2 border-slate-300  ${hover} ring-offset-2 ring-offset-slate-200 transition-all ease-in-out duration-300 `}>
                 <Icon className={text} size={25} />
                 <span>{title}</span>
-            </button>
+            </a>
         )
     }
 
@@ -27,16 +27,18 @@ export default function Hero() {
 
 
     return (
-        <section className=" w-full h-full flex flex-col lg:flex-row overflow-y-hidden">
-            <div className=" px-4 py-2 lg:py-10 lg:px-10 text-slate-800 flex flex-col gap-6 justify-start items-start flex-shrink-0  h-5/6 lg:h-full w-full lg:w-3/6" >
-                <div className='relative w-[100%] z-[1]'>
+        <section className="flex-shrink-0 w-full h-full flex flex-col lg:flex-row overflow-y-hidden">
+            <div className=" px-4 py-2 lg:py-10 lg:px-10 text-slate-800 flex flex-col gap-14 justify-start sm:items-center items-start flex-shrink-0  h-auto lg:h-full w-full lg:w-3/6" >
+
+                <a href='/' className="self-start font-black stretch-125 text-gray-900 text-3xl z-20 hover:underline ">fm.</a>
+                <div className='relative h-32 lg:h-20 w-full z-[1] mx-auto flex justify-center items-center'>
                     <Blob bgColor={"bg-lime-400"} size="h-48 w-48" />
                     <Blob bgColor={"bg-cyan-400"} size="h-52 w-52" />
                     <Blob bgColor={"bg-rose-400"} size="h-32 w-32" />
                 </div>
-                <a href='/' className="font-black stretch-125 text-gray-900 text-3xl z-20 hover:underline ">fm.</a>
-                <div className='h-48 lg:h-32'></div>
-                <div className="z-[2] text-2xl lg:text-5xl w-full flex flex-col select-none">
+                <div className="z-[2] text-2xl lg:text-5xl flex flex-col sm:items-center sm:justify-center lg:justify-start lg:items-start select-none">
+                    {/* <div className='h-32 lg:h-32'></div> */}
+
                     <div className=" w-full flex justify-start gap-5">
                         {"Hi! I am".split(" ").map((char, index) => <p key={index} className={'font-black lg:font-bold stretch-125'}>
                             <Char text={char} color="hover:text-sky-600" />
@@ -47,12 +49,6 @@ export default function Hero() {
                             <Char text={char} color="hover:text-sky-600" />
                         </p>)}
                     </div>
-                    {/* <p className={'text-2xl lg:text-6xl font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-sky-600 to-sky-400 '}>
-                        <Char text={"Fernando Montallana"} color="hover:text-sky-600" />
-                    </p> */}
-                    {/* <p className={'text-4xl lg:text-6xl font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-sky-600 to-sky-400 '}>
-                        <Char text={"Montallana"} color="hover:text-sky-600" />
-                    </p> */}
 
                     <div className=" w-full flex justify-start lg:justify-between gap-5">
                         {"a front-end developer".split(" ").map((char, index) => <span key={index} className="font-black lg:font-bold stretch-125">
@@ -64,14 +60,16 @@ export default function Hero() {
                             <Char text={char} color={char === "loves" ? "hover:text-red-600" : "hover:text-cyan-600"} />
                         </span>)}
                     </div>
+
                 </div>
                 {/* buttons */}
-                <div className=" w-full flex justify-start gap-1 lg:gap-6 pb-20 z-20">
+                <div className="pb-20 w-full flex justify-start sm:items-center sm:justify-center lg:justify-start gap-1 lg:gap-6 z-20">
                     <Button title="Projects" color="-sky-400" icon={FaProjectDiagram} />
                     <Button title="Experience" color="-emerald-400" icon={AiTwotoneExperiment} />
                     <Button title="Skills" color="-lime-400" icon={GiSkills} />
-                    <Button title="Résumé" color="-rose-400" icon={FaFileDownload} />
+                    <Button title="Resume" color="-rose-400" icon={FaFileDownload} />
                 </div>
+
             </div>
 
             <div className="relative flex flex-col lg:flex-row justify-start  flex-shrink-0  h-full lg:h-screen w-full lg:w-3/6 overflow-hidden">
@@ -81,7 +79,7 @@ export default function Hero() {
                 <div className="z-10 hidden lg:block absolute bottom-0 left-0 bg-gradient-to-t from-slate-200 to-transparent h-32 w-full -mb-5"></div>
                 <div className="z-10 hidden lg:block absolute bottom-0 left-0 bg-gradient-to-t from-slate-200 to-transparent h-32 w-full -mb-5"></div>
                 {/* </div> */}
-                <div className="h-full lg:max-w-[340px] group overflow-hidden">
+                <div className="h-full lg:max-w-[340px] group ">
                     <SliderTrack scrollType="lg:animate-scrollUp animate-scrollLeft">
                         {PROJECTS.map((project) => <Card project={project} />)}
                         {PROJECTS.map((project) => <Card project={project} />)}
@@ -90,7 +88,7 @@ export default function Hero() {
                 {/* scroll down */}
                 <div className="hidden lg:max-w-[340px] lg:block group overflow-hidden">
                     <SliderTrack scrollType="lg:animate-scrollDown animate-scrollRight">
-                        {PROJECTS.map((project) => <Card project={project} />)}
+                        {PROJECTS.reverse().map((project) => <Card project={project} />)}
                         {PROJECTS.map((project) => <Card project={project} />)}
                     </SliderTrack>
                 </div>

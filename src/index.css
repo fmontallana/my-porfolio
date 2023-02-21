@@ -20,6 +20,7 @@
 
     html {
         font-family: 'Mona Sans';
+        scroll-behavior: smooth;
     }
 
     .stretch-125 {
