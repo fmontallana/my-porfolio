@@ -28,7 +28,7 @@ export default function Card({ project }) {
             className={`w-[260px] lg:w-[300px] max-w-[300px] pb-2 flex flex-col gap-2 justify-start  transition-transform ease-linear flex-shrink-0 bg-slate-50 rounded-lg overflow-hidden shadow-sm hover:shadow-xl border border-slate-200 `}>
             <div className={`translate-x-[${translateX}px] flex transition-all ease-in duration-300`}>
                 {/* <img src={`https://picsum.photos/seed/${Math.floor(Math.random() * 99)}/300/200`} alt="" /> */}
-                {project?.images.map((img, index) => <div key={index} className={`${index !== translateX && "hidden"}  flex-shrink-0  w-full aspect-video object-cover grid place-items-center`}><img src={img} height="200px" /></div>)}
+                {project?.images.map((img, index) => <div key={index} className={`${index !== translateX && "hidden"}  flex-shrink-0  w-full aspect-video object-cover grid place-items-center`}><img src={img} width="300px" height="200px" /></div>)}
             </div>
             {/* card body */}
             <div className="flex flex-col gap-2">

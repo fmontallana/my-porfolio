@@ -6,6 +6,7 @@ import { FaFileDownload, FaProjectDiagram } from 'react-icons/fa'
 import { GiSkills } from 'react-icons/gi'
 import { AiTwotoneExperiment } from 'react-icons/ai'
 import Blob from './Blob'
+import CursorBlob from './CursorBlob'
 
 export default function Hero() {
 
@@ -33,8 +34,8 @@ export default function Hero() {
                 <a href='/' className="self-start font-black stretch-125 text-gray-900 text-3xl z-20 hover:underline ">fm.</a>
                 <div className='relative h-32 lg:h-20 w-full z-[1] mx-auto flex justify-center items-center'>
                     <Blob bgColor={"bg-lime-400"} size="h-48 w-48" />
-                    <Blob bgColor={"bg-cyan-400"} size="h-52 w-52" />
-                    <Blob bgColor={"bg-rose-400"} size="h-32 w-32" />
+                    <Blob bgColor={"bg-rose-400"} size="h-52 w-52" />
+                    <Blob bgColor={"bg-cyan-400"} size="h-32 w-32" />
                 </div>
                 <div className="z-[2] text-2xl lg:text-5xl flex flex-col sm:items-center sm:justify-center lg:justify-start lg:items-start select-none">
                     {/* <div className='h-32 lg:h-32'></div> */}

@@ -4,7 +4,6 @@ export default function Blob({ bgColor, size = "h-52 w-52" }) {
 
     const [x, setX] = useState(Math.floor(Math.random() * 100))
     const [y, setY] = useState(Math.floor(Math.random() * 100))
-    console.log(x, y)
 
     useEffect(() => {
         const interval = setInterval(() => {
