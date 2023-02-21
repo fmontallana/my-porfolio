@@ -28,8 +28,8 @@ export default function Hero() {
 
 
     return (
-        <section className="flex-shrink-0 w-full h-full flex flex-col lg:flex-row overflow-y-hidden">
-            <div className=" px-4 py-2 lg:py-10 lg:px-10 text-slate-800 flex flex-col gap-14 justify-start sm:items-center items-start flex-shrink-0  h-auto lg:h-full w-full lg:w-3/6" >
+        <section className="container mx-auto flex-shrink-0 w-full h-full flex flex-col lg:flex-row overflow-y-hidden">
+            <div className="px-4 py-2 lg:py-10 text-slate-800 flex flex-col gap-14 justify-start sm:items-center lg:items-start flex-shrink-0  h-auto lg:h-full w-full lg:w-3/6" >
 
                 <a href='/' className="self-start font-black stretch-125 text-gray-900 text-3xl z-20 hover:underline ">fm.</a>
                 <div className='relative h-32 lg:h-20 w-full z-[1] mx-auto flex justify-center items-center'>
@@ -80,16 +80,20 @@ export default function Hero() {
                 <div className="z-10 hidden lg:block absolute bottom-0 left-0 bg-gradient-to-t from-slate-200 to-transparent h-32 w-full -mb-5"></div>
                 <div className="z-10 hidden lg:block absolute bottom-0 left-0 bg-gradient-to-t from-slate-200 to-transparent h-32 w-full -mb-5"></div>
                 {/* </div> */}
-                <div className="h-full lg:max-w-[340px] group ">
-                    <SliderTrack scrollType="lg:animate-scrollUp animate-scrollLeft">
+                <div className="relative flex lg:flex-col lg:max-w-[340px] group ">
+                    <SliderTrack scrollType=" lg:animate-scrollUp1 animate-scrollLeft1">
                         {PROJECTS.map((project) => <Card project={project} />)}
+                    </SliderTrack>
+                    <SliderTrack scrollType="absolute lg:animate-scrollUp2 animate-scrollLeft2">
                         {PROJECTS.map((project) => <Card project={project} />)}
                     </SliderTrack>
                 </div>
                 {/* scroll down */}
-                <div className="hidden lg:max-w-[340px] lg:block group overflow-hidden">
-                    <SliderTrack scrollType="lg:animate-scrollDown animate-scrollRight">
-                        {PROJECTS.reverse().map((project) => <Card project={project} />)}
+                <div className="hidden lg:relative lg:flex lg:flex-col h-full lg:max-w-[340px] group overflow-hidden">
+                    <SliderTrack scrollType="lg:animate-scrollDown1 animate-scrollRight1">
+                        {PROJECTS.map((project) => <Card project={project} />)}
+                    </SliderTrack>
+                    <SliderTrack scrollType="absolute lg:animate-scrollDown2 animate-scrollRight2">
                         {PROJECTS.map((project) => <Card project={project} />)}
                     </SliderTrack>
                 </div>
