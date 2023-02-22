@@ -4,17 +4,17 @@ export default function Card({ project }) {
 
     if (!project) return null
 
-    console.log(project?.tools)
-    const [translateX, setTranslateX] = useState(0)
+    const [imageIndex, setImageIndex] = useState(0)
     const [isHover, setIsHover] = useState(false)
 
     useEffect(() => {
         let interval = null;
         if (isHover) {
             interval = setInterval(() => {
-                setTranslateX(prev => prev === project?.images.length - 1 ? 0 : prev + 1)
-            }, 500)
+                setImageIndex(prev => prev === project?.images.length - 1 ? 0 : prev + 1)
+            }, 1500)
         }
+        console.log(imageIndex)
         return () => {
             clearInterval(interval);
         }
@@ -25,10 +25,10 @@ export default function Card({ project }) {
         <div
             onMouseEnter={() => setIsHover(true)}
             onMouseLeave={() => setIsHover(false)}
-            className={`w-[260px] lg:w-[300px] max-w-[300px] pb-2 flex flex-col gap-2 justify-start  transition-transform ease-linear flex-shrink-0 bg-slate-50 rounded-lg overflow-hidden shadow hover:border-sky-300 border border-slate-300 `}>
-            <div className={`translate-x-[${translateX}px] flex transition-all ease-in duration-300`}>
+            className={` w-[300px] max-w-[300px] pb-2 flex flex-col gap-2 justify-start  transition-transform ease-linear flex-shrink-0 bg-slate-50 rounded-lg overflow-hidden shadow hover:border-sky-300 border border-slate-300 `}>
+            <div style={{ transform: `translateX(-${imageIndex}00%)` }} className={` flex transition-all ease-in-out duration-500`}>
                 {/* <img src={`https://picsum.photos/seed/${Math.floor(Math.random() * 99)}/300/200`} alt="" /> */}
-                {project?.images.map((img, index) => <div key={index} className={`${index !== translateX && "hidden"}     flex-shrink-0 scale-105 aspect-video object-cover grid place-items-center w-[300px]`}><img src={img} width="300px" height="200px" /></div>)}
+                {project?.images.map((img, index) => <div key={index} className={`relative flex-shrink-0 scale-105 aspect-video object-cover flex justify-center items-center`}><img src={img} width="300px" height="200px" /></div>)}
             </div>
             {/* card body */}
             <div className="flex flex-col gap-2">

@@ -1,19 +1,24 @@
-import aflix1 from "../assets/images/aflix1.jpeg"
-import aflix2 from "../assets/images/aflix2.jpeg"
-import aflix3 from "../assets/images/aflix3.jpeg"
-import aflix4 from "../assets/images/aflix4.jpeg"
-import aflix1_org from "../assets/images/original/aflix1.png"
-import aflix2_org from "../assets/images/original/aflix2.png"
-import aflix3_org from "../assets/images/original/aflix3.png"
-import aflix4_org from "../assets/images/original/aflix4.png"
-import quote1 from "../assets/images/quote1.png"
-import quote2 from "../assets/images/quote2.png"
-import quote3 from "../assets/images/quote3.png"
-import fc1_org from "../assets/images/original/fc1.png"
-import fc2_org from "../assets/images/original/fc2.png"
-import fc3_org from "../assets/images/original/fc3.png"
-import fc4_org from "../assets/images/original/fc4.png"
-import fc5_org from "../assets/images/original/fc5.png"
+import aflix1 from "../assets/images/aflix1.webp"
+import aflix2 from "../assets/images/aflix2.webp"
+import aflix3 from "../assets/images/aflix3.webp"
+import aflix4 from "../assets/images/aflix4.webp"
+import aflix1_org from "../assets/images/original/aflix1.webp"
+import aflix2_org from "../assets/images/original/aflix2.webp"
+import aflix3_org from "../assets/images/original/aflix3.webp"
+import aflix4_org from "../assets/images/original/aflix4.webp"
+import quote1 from "../assets/images/quote1.webp"
+import quote2 from "../assets/images/quote2.webp"
+import quote3 from "../assets/images/quote3.webp"
+import fc1 from "../assets/images/fc1.webp"
+import fc2 from "../assets/images/fc2.webp"
+import fc3 from "../assets/images/fc3.webp"
+import fc4 from "../assets/images/fc4.webp"
+import fc5 from "../assets/images/fc5.webp"
+import fc1_org from "../assets/images/original/fc1.webp"
+import fc2_org from "../assets/images/original/fc2.webp"
+import fc3_org from "../assets/images/original/fc3.webp"
+import fc4_org from "../assets/images/original/fc4.webp"
+import fc5_org from "../assets/images/original/fc5.webp"
 
 export const PROJECTS = [
 
@@ -39,7 +44,7 @@ export const PROJECTS = [
         title: "FrostCity | HVAC Services",
         description: "A website with reservation system for a local HVAC company. It has a landing page, services page, contact page, and about page.",
         tools: ["ReactJS", "TailwindCSS", "Context API", "Firebase"],
-        images: [aflix1, aflix2, aflix3, aflix4],
+        images: [fc1, fc2, fc3, fc4, fc5],
         imagesFull: [fc1_org, fc2_org, fc3_org, fc4_org, fc5_org],
         demo: "https://fcdemo.fermontallana.studio/",
         github: "https://github.com/fmontallana"
