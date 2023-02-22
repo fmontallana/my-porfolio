@@ -27,42 +27,50 @@ export const skills = [
             {
                 name: 'ReactJS',
                 icon: IoLogoReact,
-                color: 'text-blue-400'
+                color: 'text-blue-400',
+                size: 64
             },
             {
                 name: 'NextJS',
                 icon: TbBrandNextjs,
-                color: 'text-black'
+                color: 'text-black',
+                size: 40
             },
             {
                 name: 'JavaScript',
                 icon: IoLogoJavascript,
-                color: 'text-yellow-400'
+                color: 'text-yellow-400',
+                size: 45
             },
             {
                 name: 'Zustand',
                 icon: SiRedux,
-                color: 'text-purple-400'
+                color: 'text-purple-400',
+                size: 30
             },
             {
                 name: 'HTML',
                 icon: IoLogoHtml5,
-                color: 'text-red-400'
+                color: 'text-red-400',
+                size: 45
             },
             {
                 name: 'CSS',
                 icon: IoLogoCss3,
-                color: 'text-blue-400'
+                color: 'text-blue-400',
+                size: 45
             },
             {
                 name: 'Tailwind',
                 icon: SiTailwindcss,
-                color: 'text-blue-400'
+                color: 'text-blue-400',
+                size: 45
             },
             {
                 name: 'Styled',
                 icon: SiStyledcomponents,
-                color: 'text-pink-400'
+                color: 'text-pink-400',
+                size: 30
             },
         ]
     },
@@ -82,7 +90,8 @@ export const skills = [
             {
                 name: 'Firebase',
                 icon: IoLogoFirebase,
-                color: 'text-yellow-400'
+                color: 'text-yellow-400',
+                size: 40
             },
         ]
     },
@@ -107,7 +116,8 @@ export const skills = [
             {
                 name: 'Figma',
                 icon: SiFigma,
-                color: 'text-violet-400'
+                color: 'text-violet-400',
+                size: 30
             },
         ]
     },

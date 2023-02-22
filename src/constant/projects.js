@@ -32,8 +32,8 @@ export const PROJECTS = [
         github: "https://github.com/fmontallana/quote-generator"
     },
     {
-        title: "aflix | anime streaming site",
-        description: "A streaming site for anime build with modern UI. It uses the Consumet API to fetch anime data and cover photos.",
+        title: "aflix | Anime Streaming Site",
+        description: "I built this website while learning NextJS 13 and Zustand. I want it to look like a modern anime streaming site. My biggest challenge in this project was implementing the states with server-side rendering.",
         tools: ["NextJS", "Tailwind", "API", "Zustand"],
         images: [aflix1, aflix2, aflix3, aflix4],
         imagesFull: [aflix1_org, aflix2_org, aflix3_org, aflix4_org],
@@ -42,7 +42,7 @@ export const PROJECTS = [
     },
     {
         title: "FrostCity | HVAC Services",
-        description: "A website with reservation system for a local HVAC company. It has a landing page, services page, contact page, and about page.",
+        description: "This is a fullstack application and my very first freelance project. It is a reservation system with a landing page for a local HVAC company. I use firebase services like authentication and firestore for the database, TailwindCSS for the styling, and ReactJS for the frontend.",
         tools: ["ReactJS", "TailwindCSS", "Context API", "Firebase"],
         images: [fc1, fc2, fc3, fc4, fc5],
         imagesFull: [fc1_org, fc2_org, fc3_org, fc4_org, fc5_org],

@@ -36,7 +36,7 @@ export default function Card({ project }) {
                 {project?.tools.length !== 0 && <div className="px-2 text-xs  flex flex-wrap justify-start items-center gap-1">
                     {project?.tools?.map(tool => <p className="flex-shrink-0 bg-gradient-to-r from-sky-500 to-sky-400 px-2 text-white rounded">{tool}</p>)}
                 </div>}
-                <p className="flex-1 px-2 text-gray-900 text-xs">{project?.description}</p>
+                <p className="flex-1 px-2 text-gray-900 text-xs line-clamp-3 h-full ">{project?.description}</p>
             </div>
             {/* buttons */}
             <div className="px-2 flex justify-start items-center gap-2">

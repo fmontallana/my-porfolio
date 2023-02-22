@@ -68,7 +68,7 @@ export default function Hero() {
                     <Button title="Projects" color="-sky-400" icon={FaProjectDiagram} />
                     <Button title="About" color="-emerald-400" icon={AiTwotoneExperiment} />
                     <Button title="Skills" color="-lime-400" icon={GiSkills} />
-                    <Button title="Resume" color="-rose-400" icon={FaFileDownload} />
+                    <Button title="Download CV" color="-rose-400" icon={FaFileDownload} />
                 </div>
 
             </div>
@@ -80,7 +80,7 @@ export default function Hero() {
                 <div className="z-10 hidden lg:block absolute bottom-0 left-0 bg-gradient-to-t from-slate-200 to-transparent h-32 w-full -mb-5"></div>
                 <div className="z-10 hidden lg:block absolute bottom-0 left-0 bg-gradient-to-t from-slate-200 to-transparent h-32 w-full -mb-5"></div>
                 {/* </div> */}
-                <div className="relative flex lg:flex-col lg:max-w-[340px] group ">
+                <div className="z-[9] relative flex lg:flex-col lg:max-w-[340px] group ">
                     <SliderTrack scrollType=" lg:animate-scrollUp1 animate-scrollLeft1">
                         {PROJECTS.map((project) => <Card project={project} />)}
                     </SliderTrack>
