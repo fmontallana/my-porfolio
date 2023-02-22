@@ -24,7 +24,7 @@ export default function Projects() {
 
 
     return (
-        <div className='lg:h-full lg:w-9/12 mx-auto flex flex-col justify-start items-center overflow-hidden'>
+        <div className='lg:h-full lg:w-9/12 mx-auto py-4 flex flex-col gap-4 justify-start items-center overflow-hidden'>
             <div className='z-[1]  hidden absolute flex-shrink-0 h-96 w-full lg:grid grid-cols-2 grid-rows-2 grid-flow-col '>
                 <div className=" w-full h-full col-span-1">
                     <Blob bgColor={"bg-sky-400/[0.5]"} size="h-80 w-80" />
@@ -39,8 +39,8 @@ export default function Projects() {
                     <Blob bgColor={"bg-cyan-400/[0.5]"} size="h-80 w-80" />
                 </div>
             </div>
-            <h1 className='lg:self-start py-4 text-2xl font-bold stretch-125 text-slate-800'>My Projects</h1>
-            <div className=' z-10 flex-1 lg:container flex flex-col justify-center items-center w-full my-auto  '>
+            <h1 className='lg:self-start text-2xl font-bold stretch-125 text-slate-800'>My Projects</h1>
+            <div className=' z-10 lg:container flex flex-col justify-center items-center w-full my-auto  '>
 
                 <div className='relative w-full flex overflow-hidden lg:border-2 border-b-0 border-slate-300 lg:rounded-t-lg bg-slate-100'>
                     <div style={{ transform: `translateX(-${imageIndex}00%)` }} className={`flex transition-transform lg:transition-none ease-in-out duration-1000`}>
@@ -69,7 +69,7 @@ export default function Projects() {
                     </div>
                 </div>
 
-                <div className='z-10 flex h-16 lg:h-24 w-full border-2 border-t-0 border-slate-300 lg:rounded-b-lg overflow-hidden '>
+                <div className='z-10 flex h-16 lg:h-16 w-full border-2 border-t-0 border-slate-300 lg:rounded-b-lg overflow-hidden '>
 
                     {PROJECTS?.map((item, i) => (
                         <button type='button' onClick={() => handleClick(item)} className={`flex-1 h-full w-full bg-white grid place-items-center  lg:text-xl font-black stretch-75 hover:text-cyan-400 border-x ${item.title === project.title ? "text-sky-400 " : "text-slate-600"}`}>
