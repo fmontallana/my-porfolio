@@ -32,7 +32,7 @@ export default function Hero() {
             <div className="px-4 py-2 lg:py-10 text-slate-800 flex flex-col gap-14 justify-start sm:items-center lg:items-start flex-shrink-0  h-auto lg:h-full w-full lg:w-3/6" >
 
                 <a href='/' className="self-start font-black stretch-125 text-gray-900 text-3xl z-20 hover:underline ">fm.</a>
-                <div className='absolute h-96 lg:h-20 w-3/6 z-[1] mx-auto flex justify-center items-center '>
+                <div className='absolute -top-32 lg:top-0 h-96 lg:h-20 w-3/6 z-[1] mx-auto flex justify-center items-center '>
                     <Blob bgColor={"bg-lime-400"} size="h-48 w-48" />
                     <Blob bgColor={"bg-rose-400"} size="h-52 w-52" />
                     <Blob bgColor={"bg-cyan-400"} size="h-32 w-32" />
