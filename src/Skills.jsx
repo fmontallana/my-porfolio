@@ -28,12 +28,12 @@ export default function Skills() {
     }
 
     return (
-        <div className=' container flex flex-col items-center h-full w-9/12 mx-auto py-10'>
+        <div className='container flex flex-col items-center h-full w-9/12 mx-auto py-10'>
             <h1 className='z-10 lg:self-start py-4 text-2xl font-bold stretch-125 text-slate-800'>My Favorite Tools</h1>
             <div className='z-10 lg:h-[70vh] w-full grid grid-cols-1 lg:grid-cols-4  gap-4 '>
                 <div className='h-full w-full hidden lg:flex flex-col  bg-gradient-to-tr from-slate-100 to-slate-50 rounded-lg shadow-lg row-span-6 col-span-2 p-4'>
-                    <p className='text-sm text-slate-700 leading-loose text-justify'>I tried many programming languages like C++, Java, C#, PHP, Javascript, and Python. I made small program out of it. But, I ended up liking web development and I really love designing and building a responsive website. Then I discovered ReactJS; all I can say is I really love it. I'm looking forward to try other tech stack too.</p>
-                    <div ref={ref} className='relative flex-1 overflow-hidden'>
+                    <p className='text-sm text-slate-700 leading-loose text-justify'>I tried many programming languages like C++, Java, C#, PHP, Javascript, and Python. I made a small program out of it. But, I ended up liking web development. Then I discovered ReactJS; all I can say is I love it. I'm looking forward to trying other tech stacks too. But for now, these are my favorites.</p>
+                    <div ref={ref} className='relative h-full w-full flex-1 overflow-hidden'>
                         {logos.reverse().map((logo, index) => {
                             return <SkillBubble key={index} logo={logo} parentRef={ref} />
                         })}
