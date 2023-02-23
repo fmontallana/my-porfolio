@@ -21,7 +21,24 @@ import fc4_org from "../assets/images/original/fc4.webp"
 import fc5_org from "../assets/images/original/fc5.webp"
 
 export const PROJECTS = [
-
+    {
+        title: "FrostCity",
+        description: "This is a fullstack application and my very first freelance project. It is a reservation system with a landing page for a local HVAC company. I use firebase services like authentication and firestore for the database, TailwindCSS for the styling, and ReactJS for the frontend.",
+        tools: ["ReactJS", "Tailwind", "Context API", "Firebase"],
+        images: [fc1, fc2, fc3, fc4, fc5],
+        imagesFull: [fc1_org, fc2_org, fc3_org, fc4_org, fc5_org],
+        demo: "https://fcdemo.fermontallana.studio/",
+        github: "https://github.com/fmontallana/fcdemo"
+    },
+    {
+        title: "aflix",
+        description: "I built this website while learning NextJS 13 and Zustand. I want it to look like a modern anime streaming site. My biggest challenge in this project was implementing the states with server-side rendering.",
+        tools: ["NextJS", "Tailwind", "API", "Zustand"],
+        images: [aflix1, aflix2, aflix3, aflix4],
+        imagesFull: [aflix1_org, aflix2_org, aflix3_org, aflix4_org],
+        demo: "https://anime.fermontallana.studio/",
+        github: "https://github.com/fmontallana/aniwatch"
+    },
     {
         title: "Quote Generator",
         description: "A project that generates random quotes from an API. It also allows you to tweet the quote. Created from a coding challenge from CodingSpaces.",
@@ -31,23 +48,4 @@ export const PROJECTS = [
         demo: "https://quote.fermontallana.studio/",
         github: "https://github.com/fmontallana/quote-generator"
     },
-    {
-        title: "aflix | Anime Streaming Site",
-        description: "I built this website while learning NextJS 13 and Zustand. I want it to look like a modern anime streaming site. My biggest challenge in this project was implementing the states with server-side rendering.",
-        tools: ["NextJS", "Tailwind", "API", "Zustand"],
-        images: [aflix1, aflix2, aflix3, aflix4],
-        imagesFull: [aflix1_org, aflix2_org, aflix3_org, aflix4_org],
-        demo: "https://anime.fermontallana.studio/",
-        github: "https://github.com/fmontallana/aniwatch"
-    },
-    {
-        title: "FrostCity | HVAC Services",
-        description: "This is a fullstack application and my very first freelance project. It is a reservation system with a landing page for a local HVAC company. I use firebase services like authentication and firestore for the database, TailwindCSS for the styling, and ReactJS for the frontend.",
-        tools: ["ReactJS", "TailwindCSS", "Context API", "Firebase"],
-        images: [fc1, fc2, fc3, fc4, fc5],
-        imagesFull: [fc1_org, fc2_org, fc3_org, fc4_org, fc5_org],
-        demo: "https://fcdemo.fermontallana.studio/",
-        github: "https://github.com/fmontallana"
-    },
-
 ]

@@ -123,3 +123,10 @@ export const skills = [
     },
 ];
 
+let logos = []
+logos = skills.map((skill) => logos = [...logos, ...skill.skills])
+
+export {
+    logos
+}
+
