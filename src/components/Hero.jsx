@@ -7,6 +7,7 @@ import { GiSkills } from 'react-icons/gi'
 import { AiTwotoneExperiment } from 'react-icons/ai'
 import Blob from './Blob'
 import CursorBlob from './CursorBlob'
+import { SiLinkedin, SiMessenger, SiMinutemailer } from 'react-icons/si'
 
 export default function Hero() {
 
@@ -17,7 +18,7 @@ export default function Hero() {
         const text = color === "-sky-400" ? "text-sky-400" : color === "-emerald-400" ? "text-emerald-400" : color === "-rose-400" ? "text-rose-400" : "text-lime-400"
 
         return (
-            <a href={`/#${title.toLowerCase()}`} className={`bg-slate-100 py-1 flex-shrink-0 gap-1 flex flex-col justify-center items-center text-xs  lg:text-sm text-gray-500 font-semibold  w-20 lg:h-20 lg:w-28  rounded-lg border-2 border-slate-300  ${hover} ring-offset-2 ring-offset-slate-200 transition-all ease-in-out duration-300 `}>
+            <a href={`/#${title.toLowerCase()}`} className={`bg-slate-100 py-1 flex-shrink-0 gap-1 flex flex-col justify-center items-center text-xs  lg:text-sm text-gray-500 font-semibold  w-20 lg:h-20 lg:w-28  rounded-lg border border-slate-300  ${hover} ring-offset-2 ring-offset-slate-200 transition-all ease-in-out duration-300 `}>
                 <Icon className={text} size={25} />
                 <span>{title}</span>
             </a>
@@ -35,7 +36,22 @@ export default function Hero() {
                 <Blob bgColor={"bg-cyan-400"} size="h-32 w-32" />
             </div>
             <div className="px-4 py-2 lg:py-10 text-slate-800 flex flex-col gap-14 justify-start sm:items-center lg:items-start flex-shrink-0  h-auto lg:h-full w-full lg:w-3/6 " >
-                <a href='/' className="self-start font-black stretch-125 text-gray-900 text-3xl z-20 hover:underline ">fm.</a>
+                <div className='z-10 w-full flex justify-between items-center'>
+                    <a href='/' className="self-start font-black stretch-125 text-gray-900 text-3xl z-20 hover:underline ">fm.</a>
+                    <div className='flex justify-center items-center  border border-sky-400 rounded-full overflow-hidden'>
+                        {/* <p className='text-transparent bg-clip-text bg-gradient-to-r lg:font-semibold from-cyan-500 to-pink-500 '>Connect</p> */}
+
+                        <a href="https://www.linkedin.com/in/fernando-montallana-jr-518a46206/" target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-4  text-sm font-semibold hover:bg-slate-100">
+                            <SiMinutemailer />
+                        </a>
+                        <a href="https://www.linkedin.com/in/fernando-montallana-jr-518a46206/" target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-4 border-l border-cyan-500 text-sm font-semibold hover:bg-slate-100">
+                            <SiLinkedin />
+                        </a>
+                        <a href="https://m.me/friednando" target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-4 border-l border-cyan-500 text-sm font-semibold hover:bg-slate-100">
+                            <SiMessenger />
+                        </a>
+                    </div>
+                </div>
 
                 <div className="z-[2] pt-32 lg:pt-20 text-2xl lg:text-5xl flex flex-col sm:items-center sm:justify-center lg:justify-start lg:items-start select-none">
                     {/* <div className='h-32 lg:h-32'></div> */}
