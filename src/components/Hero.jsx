@@ -53,8 +53,7 @@ export default function Hero() {
                     </div>
                 </div>
 
-                <div className="z-[2] pt-32 lg:pt-20 text-2xl lg:text-5xl flex flex-col sm:items-center sm:justify-center lg:justify-start lg:items-start select-none">
-                    {/* <div className='h-32 lg:h-32'></div> */}
+                <div className="z-[2] pt-32 lg:pt-20 text-slate-800 text-2xl lg:text-5xl flex flex-col sm:items-center sm:justify-center lg:justify-start lg:items-start select-none">
 
                     <div className=" w-full flex justify-start gap-5">
                         {"Hi! I am".split(" ").map((char, index) => <p key={index} className={'font-black lg:font-bold stretch-125'}>
@@ -81,9 +80,9 @@ export default function Hero() {
                 </div>
                 {/* buttons */}
                 <div className="pb-20 w-full flex justify-start sm:items-center sm:justify-center lg:justify-start gap-1 lg:gap-6 z-20">
+                    <Button title="Skills" color="-lime-400" icon={GiSkills} />
                     <Button title="Projects" color="-sky-400" icon={FaProjectDiagram} />
                     <Button title="About" color="-emerald-400" icon={AiTwotoneExperiment} />
-                    <Button title="Skills" color="-lime-400" icon={GiSkills} />
                     <Button title="Resume" color="-rose-400" icon={FaFileDownload} />
                 </div>
 

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { skills } from '../constant/skills';
 import { motion } from 'framer-motion'
+import { SiGithub, SiTplink } from 'react-icons/si';
 
 export default function ProjectItem({ project }) {
 
@@ -41,8 +42,8 @@ export default function ProjectItem({ project }) {
 
                     <p className='text-sm lg:text-base text-slate-600'>{project.description}</p>
                     <div className=" flex justify-start items-center gap-2">
-                        <a href={project?.demo} target="_blank" referrerPolicy="" className="grid place-items-center text-white h-7 px-2 border border-cyan-500 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded text-sm font-semibold hover:from-cyan-400 hover:to-cyan-500">Live Demo</a>
-                        <a href={project?.github} target="_blank" referrerPolicy="" className="grid place-items-center text-cyan-500 h-7 px-2 border border-cyan-500 rounded text-sm font-semibold hover:bg-slate-100">Github Repo</a>
+                        <a href={project?.demo} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-white h-7 px-2 border border-cyan-500 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded text-sm font-semibold hover:from-cyan-400 hover:to-cyan-500">Live Demo <SiTplink /> </a>
+                        <a href={project?.github} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-2 border border-cyan-500 rounded text-sm font-semibold hover:bg-slate-100">Github Repo <SiGithub /></a>
                     </div>
                 </div>
             </div>

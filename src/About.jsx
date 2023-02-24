@@ -11,7 +11,7 @@ export default function About() {
                     Hi! 👋 I'm <span className='font-semibold'>Fernando</span>, a <span className='font-semibold'>ReactJS</span> enthusiast and front-end developer. Although I'm knowledgeable in backend development, I prefer to work as a front-end developer. < span className='font-semibold'>I love learning new technologies and developing attractive, responsive web applications.</span> I also love video games and anime a lot.
                 </div>
                 <hr className='w-full lg:hidden border border-slate-300' />
-                <div className='flex-1 flex flex-col justify-start items-center gap-4'>
+                <div className='w-full flex-1 flex flex-col justify-center lg:justify-start items-center gap-4'>
                     <p className='text-slate-800 font-semibold'>Always down to
                         exchange ideas and explore collaborations</p>
 

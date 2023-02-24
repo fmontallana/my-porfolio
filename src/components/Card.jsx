@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react"
+import { SiGithub, SiTplink } from "react-icons/si"
 import { skills } from "../constant/skills"
 
 export default function Card({ project }) {
@@ -55,8 +56,9 @@ export default function Card({ project }) {
                 <p className="max-h-12 flex-1 px-2 text-gray-900 text-xs line-clamp-3 h-full ">{project?.description}</p>
                 {/* buttons */}
                 <div className="px-2 flex justify-start items-center gap-2">
-                    <a href={project?.demo} target="_blank" referrerPolicy="" className="grid place-items-center text-white h-7 px-2 border border-cyan-500 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded text-sm font-semibold hover:from-cyan-400 hover:to-cyan-500">Live Demo</a>
-                    <a href={project?.github} target="_blank" referrerPolicy="" className="grid place-items-center text-cyan-500 h-7 px-2 border border-cyan-500 rounded text-sm font-semibold hover:bg-slate-100">Github Repo</a>
+                    <a href={project?.demo} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-white h-7 px-2 border border-cyan-500 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded text-sm font-semibold hover:from-cyan-400 hover:to-cyan-500">Demo <SiTplink /></a>
+                    <a href={project?.github} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-2 border border-cyan-500 rounded text-sm font-semibold hover:bg-slate-100">
+                        Repo <SiGithub /></a>
                 </div>
             </div>
 
