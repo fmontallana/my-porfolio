@@ -13,12 +13,12 @@ export default function Hero() {
 
     const Button = ({ title, icon: Icon, color }) => {
 
+        const href = title === "Resume" ? "/resume.pdf" : `/#${title.toLowerCase()}`
         const hover = color === "-sky-400" ? "hover:border-sky-400" : color === "-emerald-400" ? "hover:border-emerald-400" : color === "-rose-400" ? "hover:border-rose-400" : "hover:border-lime-400"
-
         const text = color === "-sky-400" ? "text-sky-400" : color === "-emerald-400" ? "text-emerald-400" : color === "-rose-400" ? "text-rose-400" : "text-lime-400"
 
         return (
-            <a href={`/#${title.toLowerCase()}`} className={`bg-slate-100 py-1 flex-shrink-0 gap-1 flex flex-col justify-center items-center text-xs  lg:text-sm text-gray-500 font-semibold  w-20 lg:h-20 lg:w-28  rounded-lg border border-slate-300  ${hover} ring-offset-2 ring-offset-slate-200 transition-all ease-in-out duration-300 `}>
+            <a href={href} className={`bg-slate-100 py-1 flex-shrink-0 gap-1 flex flex-col justify-center items-center text-xs  lg:text-sm text-gray-500 font-semibold  w-20 lg:h-20 lg:w-28  rounded-lg border border-slate-300  ${hover} ring-offset-2 ring-offset-slate-200 transition-all ease-in-out duration-300 `}>
                 <Icon className={text} size={25} />
                 <span>{title}</span>
             </a>

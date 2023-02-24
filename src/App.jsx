@@ -34,7 +34,7 @@ function App() {
             <li className="hover:text-cyan-400 underline list-none"><a href="#home">home</a></li>
             <li className="hover:text-cyan-400 underline"><a href="#skills">skills</a></li>
             <li className="hover:text-cyan-400 underline"><a href="#projects">projects</a></li>
-            <li className="hover:text-cyan-400 underline"><a href="#">resume</a></li>
+            <li className="hover:text-cyan-400 underline"><a href="/resume.pdf">resume</a></li>
           </ul>
           <p className="text-xs text-slate-300">Build and designed with ❤️ by <apan className="font-semibold"> Fernando Montallana</apan> </p>
         </footer>
