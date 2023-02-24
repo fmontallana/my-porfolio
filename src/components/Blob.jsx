@@ -9,7 +9,7 @@ export default function Blob({ bgColor, size = "h-52 w-52" }) {
         const interval = setInterval(() => {
             setX(Math.floor(Math.random() * 100))
             setY(Math.floor(Math.random() * 100))
-        }, 2000);
+        }, 10000);
 
         return () => {
             clearInterval(interval);
@@ -18,6 +18,6 @@ export default function Blob({ bgColor, size = "h-52 w-52" }) {
 
 
     return (
-        <div style={{ transform: `translate(${x}%, ${y}%)` }} className={`absolute ${bgColor} rounded-full ${size} blur-3xl transition-transform ease-linear duration-[2000ms]`} />
+        <div style={{ transform: `translate(${x}%, ${y}%)` }} className={`absolute ${bgColor} rounded-full ${size} blur-3xl transition-transform ease-linear duration-[10000ms]`} />
     )
 }

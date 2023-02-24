@@ -42,8 +42,8 @@ export default function ProjectItem({ project }) {
 
                     <p className='text-sm lg:text-base text-slate-600'>{project.description}</p>
                     <div className=" flex justify-start items-center gap-2">
-                        <a href={project?.demo} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-white h-7 px-2 border border-cyan-500 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded text-sm font-semibold hover:from-cyan-400 hover:to-cyan-500">Live Demo <SiTplink /> </a>
-                        <a href={project?.github} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-2 border border-cyan-500 rounded text-sm font-semibold hover:bg-slate-100">Github Repo <SiGithub /></a>
+                        {project.demo.length > 0 && <a href={project?.demo} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-white h-7 px-2 border border-cyan-500 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded text-sm font-semibold hover:from-cyan-400 hover:to-cyan-500">Live Demo <SiTplink /> </a>}
+                        <a href={project?.github} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-2 border border-cyan-500 rounded text-sm font-semibold hover:bg-white">Github Repo <SiGithub /></a>
                     </div>
                 </div>
             </div>
@@ -54,7 +54,7 @@ export default function ProjectItem({ project }) {
                     className={`h-full flex transition-transform lg:transition-none ease-in-out duration-1000 `}>
                     {project?.imagesFull?.map((image, i) => (
                         <div className='relative flex-shrink-0 h-full w-full flex justify-center items-start lg:items-center'>
-                            <img class="h-52 lg:h-96 w-full object-cover" src={image} alt="image description" />
+                            <img class="h-52 sm:h-96 w-full object-cover" src={image} alt="image description" />
                         </div>
                     ))}
                 </motion.div>

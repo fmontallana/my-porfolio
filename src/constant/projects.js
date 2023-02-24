@@ -6,9 +6,6 @@ import aflix1_org from "../assets/images/original/aflix1.webp"
 import aflix2_org from "../assets/images/original/aflix2.webp"
 import aflix3_org from "../assets/images/original/aflix3.webp"
 import aflix4_org from "../assets/images/original/aflix4.webp"
-import quote1 from "../assets/images/quote1.webp"
-import quote2 from "../assets/images/quote2.webp"
-import quote3 from "../assets/images/quote3.webp"
 import fc1 from "../assets/images/fc1.webp"
 import fc2 from "../assets/images/fc2.webp"
 import fc3 from "../assets/images/fc3.webp"
@@ -19,6 +16,14 @@ import fc2_org from "../assets/images/original/fc2.webp"
 import fc3_org from "../assets/images/original/fc3.webp"
 import fc4_org from "../assets/images/original/fc4.webp"
 import fc5_org from "../assets/images/original/fc5.webp"
+import fp1 from "../assets/images/original/fp1.webp"
+import fp2 from "../assets/images/original/fp2.webp"
+import fp3 from "../assets/images/original/fp3.webp"
+import fp4 from "../assets/images/original/fp4.webp"
+import fp1_small from "../assets/images/fp1-small.webp"
+import fp2_small from "../assets/images/fp2-small.webp"
+import fp3_small from "../assets/images/fp3-small.webp"
+import fp4_small from "../assets/images/fp4-small.webp"
 
 export const PROJECTS = [
     {
@@ -40,12 +45,21 @@ export const PROJECTS = [
         github: "https://github.com/fmontallana/aniwatch"
     },
     {
-        title: "Quote Generator",
-        description: "A project that generates random quotes from an API. It also allows you to tweet the quote. Created from a coding challenge from CodingSpaces.",
-        tools: ["HTML", "CSS", "JavaScript", "API"],
-        images: [quote1, quote2, quote3],
-        imagesFull: [quote1, quote2, quote3],
-        demo: "https://quote.fermontallana.studio/",
-        github: "https://github.com/fmontallana/quote-generator"
+        title: "Portfolio",
+        description: "This is my portfolio website. Simple yet elegant, utilizing the gradient colors. I built it with ReactJS and TailwindCSS. I also used Framer Motion for some animations.",
+        tools: ["ReactJS", "Tailwind", "Framer Motion"],
+        images: [fp1_small, fp2_small, fp3_small, fp4_small],
+        imagesFull: [fp1, fp2, fp3, fp4],
+        demo: "",
+        github: "https://github.com/fmontallana/my-porfolio"
     },
+    // {
+    //     title: "Quote Generator",
+    //     description: "A project that generates random quotes from an API. It also allows you to tweet the quote. Created from a coding challenge from CodingSpaces.",
+    //     tools: ["HTML", "CSS", "JavaScript", "API"],
+    //     images: [quote1, quote2, quote3],
+    //     imagesFull: [quote1, quote2, quote3],
+    //     demo: "https://quote.fermontallana.studio/",
+    //     github: "https://github.com/fmontallana/quote-generator"
+    // },
 ]
