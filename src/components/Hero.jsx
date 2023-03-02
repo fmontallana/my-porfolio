@@ -72,7 +72,7 @@ export default function Hero() {
                         </span>)}
                     </div>
                     <div className=" w-full flex justify-start lg:justify-between gap-5">
-                        {"who loves ReactJS.".split(" ").map((char, index) => <span key={index} className={`font-black lg:font-bold stretch-125 ${char.toLowerCase() === "reactjs." && "font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-cyan-600 to-cyan-400"}`}>
+                        {"specializes in ReactJS.".split(" ").map((char, index) => <span key={index} className={`font-black lg:font-bold stretch-125 ${char.toLowerCase() === "reactjs." && "font-black stretch-125 bg-clip-text text-transparent bg-gradient-to-tr from-cyan-600 to-cyan-400"}`}>
                             <Char text={char} color={char === "loves" ? "hover:text-red-600" : "hover:text-cyan-600"} />
                         </span>)}
                     </div>
