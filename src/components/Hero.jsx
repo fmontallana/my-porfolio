@@ -22,7 +22,7 @@ export default function Hero() {
                 color === "-rose-400" ? "hover:bg-gradient-to-r from-rose-500 to-rose-300" : "hover:bg-gradient-to-r from-lime-500 to-lime-300"
 
         return (
-            <a href={href} className={`bg-slate-100 py-1 flex-shrink-0 gap-1 flex justify-center items-center text-xs  lg:text-sm ${text} hover:text-slate-100 font-semibold  w-20 h-10 lg:h-10 lg:w-28  rounded-lg border ${hoverBg} ${border}  ${hover} ring-offset-2 ring-offset-slate-200 transition-colors ease-in-out duration-500`}>
+            <a href={href} className={`bg-white py-1 flex-shrink-0 gap-1 flex justify-center items-center text-xs  lg:text-sm ${text} hover:text-slate-100 font-semibold  w-20 h-10 lg:h-10 lg:w-28 shadow-lg rounded-lg border ${hoverBg} ${border} ${hover} ring-offset-2 ring-offset-slate-200 transition-colors ease-in-out duration-500`}>
                 <Icon className='delay-[0.2]' size={16} />
                 <span className='delay-[0.2]'>{title}</span>
             </a>
@@ -48,7 +48,7 @@ export default function Hero() {
                         <div className='flex justify-center items-center  border border-sky-400 rounded-full overflow-hidden'>
                             {/* <p className='text-transparent bg-clip-text bg-gradient-to-r lg:font-semibold from-cyan-500 to-pink-500 '>Connect</p> */}
 
-                            <a href="https://www.linkedin.com/in/fernando-montallana-jr-518a46206/" target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-4  text-sm font-semibold hover:bg-slate-100">
+                            <a href="mailto:fernandomontallana@gmail.com" target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-4  text-sm font-semibold hover:bg-slate-100">
                                 <SiMinutemailer />
                             </a>
                             <a href="https://www.linkedin.com/in/fernando-montallana-jr-518a46206/" target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-4 border-l border-cyan-500 text-sm font-semibold hover:bg-slate-100">
