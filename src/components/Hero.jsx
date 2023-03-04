@@ -34,7 +34,7 @@ export default function Hero() {
 
     return (
         <>
-            <div className='absolute -top-64  h-full w-full z-[1] flex justify-center items-center overflow-x-hidden overflow-y-visible '>
+            <div className='absolute   h-full w-full z-[1] flex justify-center items-start overflow-x-hidden overflow-y-visible '>
                 <Blob bgColor={"bg-lime-400"} size="h-48 w-48" />
                 <Blob bgColor={"bg-rose-400"} size="h-52 w-52" />
                 <Blob bgColor={"bg-cyan-400"} size="h-32 w-32" />
