@@ -24,10 +24,15 @@ import fp1_small from "../assets/images/fp1-small.webp"
 import fp2_small from "../assets/images/fp2-small.webp"
 import fp3_small from "../assets/images/fp3-small.webp"
 import fp4_small from "../assets/images/fp4-small.webp"
+import brobot1 from "../assets/images/original/brobot1.webp"
+import brobot2 from "../assets/images/original/brobot2.webp"
+import brobot1_small from "../assets/images/brobot1-small.png"
+import brobot2_small from "../assets/images/brobot2-small.png"
 
 export const PROJECTS = [
     {
         title: "FrostCity",
+        subTitle: "HVAC Reservation System",
         description: "This is a fullstack application and my very first freelance project. It is a reservation system with a landing page for a local HVAC company. I use firebase services like authentication and firestore for the database, TailwindCSS for the styling, and ReactJS for the frontend.",
         tools: ["ReactJS", "Tailwind", "Context API", "Firebase"],
         images: [fc1, fc2, fc3, fc4, fc5],
@@ -37,6 +42,7 @@ export const PROJECTS = [
     },
     {
         title: "aflix",
+        subTitle: "Anime Streaming Site UI",
         description: "I built this website while learning NextJS 13 and Zustand. I want it to look like a modern anime streaming site. My biggest challenge in this project was implementing the states with server-side rendering.",
         tools: ["NextJS", "Tailwind", "API", "Zustand"],
         images: [aflix1, aflix2, aflix3, aflix4],
@@ -45,7 +51,18 @@ export const PROJECTS = [
         github: "https://github.com/fmontallana/aniwatch"
     },
     {
+        title: "Brobot",
+        subTitle: "Chatbot with AI",
+        description: "I implement OpenAI ChatGPT API in this project. It emulates human like conversations. It can respond in Filipino with some Conyo style and slang words. It can also use emojis to express emotions.",
+        tools: ["ReactJS", "Tailwind", "Zustand", "Firebase", "MongoDB", "ExpressJS", "NodeJS"],
+        images: [brobot1, brobot2],
+        imagesFull: [brobot1_small, brobot2_small],
+        demo: "https://brobot.fermontallana.studio/",
+        github: ""
+    },
+    {
         title: "Portfolio",
+        subTitle: "My Portfolio Website",
         description: "This is my portfolio website. Simple yet elegant, utilizing the gradient colors. I built it with ReactJS and TailwindCSS. I also used Framer Motion for some animations.",
         tools: ["ReactJS", "Tailwind", "Framer Motion"],
         images: [fp1_small, fp2_small, fp3_small, fp4_small],

@@ -26,7 +26,7 @@ export default function Projects() {
             </div>
             <h1 className='lg:self-start text-xl lg:text-2xl font-bold stretch-125 text-slate-800'>My Projects</h1>
 
-            {PROJECTS.map((project, i) => <ProjectItem key={i} project={project} />)}
+            {PROJECTS.map((project, i) => <ProjectItem key={i} id={i} project={project} />)}
         </div>
     )
 }

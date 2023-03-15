@@ -3,7 +3,7 @@ import { skills } from '../constant/skills';
 import { motion } from 'framer-motion'
 import { SiGithub, SiTplink } from 'react-icons/si';
 
-export default function ProjectItem({ project }) {
+export default function ProjectItem({ id, project }) {
 
     const [imageIndex, setImageIndex] = useState(0)
 
@@ -22,11 +22,12 @@ export default function ProjectItem({ project }) {
     }, [project])
 
     return (
-        <div className='z-20 mb-10 flex flex-col-reverse lg:flex-row bg-slate-50 text-slate-700 lg:h-96 w-full lg:rounded-lg shadow-lg overflow-hidden border border-slate-300 '>
+        <div className={`z-20 mb-10 flex flex-col-reverse ${id % 2 ? "lg:flex-row-reverse" : "lg:flex-row"} bg-slate-50 text-slate-700 lg:h-96 w-full lg:rounded-lg shadow-lg overflow-hidden border border-slate-300 `}>
             <div className='h-full w-full lg:flex-1 p-4'>
                 <div className='h-full w-full flex flex-col justify-evenly items-start gap-2'>
                     <div className='flex flex-col justify-center items-start gap-2'>
                         <h1 className='text-xl lg:text-3xl font-semibold stretch-125'>{project.title}</h1>
+                        <h3 className='text-sm text-slate-500/[0.9]'>{project.subTitle}</h3>
                         <div className='flex flex-wrap gap-1 '>
                             {project.tools.map(tool => {
 
@@ -42,8 +43,8 @@ export default function ProjectItem({ project }) {
 
                     <p className='text-sm lg:text-base text-slate-600'>{project.description}</p>
                     <div className=" flex justify-start items-center gap-2">
-                        {project.demo.length > 0 && <a href={project?.demo} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-white h-7 px-2 border border-cyan-500 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded text-sm font-semibold hover:from-cyan-400 hover:to-cyan-500">Live Demo <SiTplink /> </a>}
-                        <a href={project?.github} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-2 border border-cyan-500 rounded text-sm font-semibold hover:bg-white">Github Repo <SiGithub /></a>
+                        {project.demo?.length > 0 && <a href={project?.demo} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-white h-7 px-2 border border-cyan-500 bg-gradient-to-r from-cyan-500 to-cyan-400 rounded text-sm font-semibold hover:from-cyan-400 hover:to-cyan-500">Live Demo <SiTplink /> </a>}
+                        {project.github?.length > 0 && <a href={project?.github} target="_blank" referrerPolicy="" className="flex justify-center items-center gap-1 text-cyan-500 h-7 px-2 border border-cyan-500 rounded text-sm font-semibold hover:bg-white">Github Repo <SiGithub /></a>}
                     </div>
                 </div>
             </div>
