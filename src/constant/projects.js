@@ -47,7 +47,7 @@ export const PROJECTS = [
         tools: ["NextJS", "Tailwind", "API", "Zustand"],
         images: [aflix1, aflix2, aflix3, aflix4],
         imagesFull: [aflix1_org, aflix2_org, aflix3_org, aflix4_org],
-        demo: "https://anime.fermontallana.studio/",
+        demo: "https://aflix.fermontallana.studio/",
         github: "https://github.com/fmontallana/aniwatch"
     },
     {
