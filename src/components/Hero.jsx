@@ -13,7 +13,7 @@ export default function Hero() {
 
     const Button = ({ title, icon: Icon, color }) => {
 
-        const href = title === "Resume" ? "/resume.pdf" : `/#${title.toLowerCase()}`
+        const href = title === "Resume" ? "https://drive.google.com/drive/folders/1lvZWAv7kUqqsYpleUZfNGcxqufQ9PbEz?usp=share_link" : `/#${title.toLowerCase()}`
         const hover = color === "-sky-400" ? "hover:border-sky-400" : color === "-emerald-400" ? "hover:border-emerald-400" : color === "-rose-400" ? "hover:border-rose-400" : "hover:border-lime-400"
         const text = color === "-sky-400" ? "text-sky-400" : color === "-emerald-400" ? "text-emerald-400" : color === "-rose-400" ? "text-rose-400" : "text-lime-400"
         const border = color === "-sky-400" ? "border-sky-400" : color === "-emerald-400" ? "border-emerald-400" : color === "-rose-400" ? "border-rose-400" : "border-lime-400"
