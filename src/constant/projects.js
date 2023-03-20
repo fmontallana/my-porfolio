@@ -55,8 +55,8 @@ export const PROJECTS = [
         subTitle: "Chatbot with AI",
         description: "I implement OpenAI ChatGPT API in this project. It emulates human like conversations. It can respond in Filipino with some Conyo style and slang words. It can also use emojis to express emotions.",
         tools: ["ReactJS", "Tailwind", "Zustand", "Firebase", "MongoDB", "ExpressJS", "NodeJS"],
-        images: [brobot1, brobot2],
-        imagesFull: [brobot1_small, brobot2_small],
+        images: [brobot1_small, brobot2_small],
+        imagesFull: [brobot1, brobot2],
         demo: "https://brobot.fermontallana.studio/",
         github: ""
     },
