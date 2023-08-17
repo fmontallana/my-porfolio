@@ -37,7 +37,7 @@ export const PROJECTS = [
         tools: ["ReactJS", "Tailwind", "Context API", "Firebase"],
         images: [fc1, fc2, fc3, fc4, fc5],
         imagesFull: [fc1_org, fc2_org, fc3_org, fc4_org, fc5_org],
-        demo: "https://fcdemo.fermontallana.studio/",
+        demo: "https://fcdemo.vercel.app/",
         github: "https://github.com/fmontallana/fcdemo"
     },
     {
